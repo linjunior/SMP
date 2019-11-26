@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Grafico";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DataFromDataBase</title>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+    <br />
+    <br />
+    <div class="jumbotron" style="background-image:url('../fita.jpg'); width: 100%; height: 100%; background-size:cover;">
+
+        <div>
+            <p><span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Peso Atual: 90 Kg</span></p>
+            <p><span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Peso Alvo: 70 Kg</span></p>
+        </div>
+
+        <br />
+        <br />
+        <input id="btnCadastrar"  onclick="location.href='/Aluno/PainelAluno';"  type="button" value="Voltar" />
+   
+    </div>
+    <div>
+        <div id="chartContainer"></div>
+
+        <br />
+
+
+
+        <script type="text/javascript">
+        //var result = @Html.Raw(ViewBag.DataPoints);
+        var dataPoints =[];
+        //for(var i = 0; i < result.length; i++){
+          //   dataPoints.push({label:result[i].x, y:result[i].y});
+        //}
+
+        dataPoints.push({label:'10/10/2019', y:90 });
+        dataPoints.push({ label:'10/11/2019', y: 80 });
+        dataPoints.push({ label:'20/11/2019', y: 85 });
+         dataPoints.push({label:'30/11/2019', y:70 });
+
+
+
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer", {
+                theme: "light2",
+                zoomEnabled: true,
+                animationEnabled: true,
+                title: {
+                    text: "Evolução das medidas"
+                },
+                data: [
+                    {
+                        type: "line",
+
+                        dataPoints: dataPoints,
+                    }
+                ]
+            });
+            chart.render();
+        };
+        </script>
+    </div>
+
+</body>
+</html>
