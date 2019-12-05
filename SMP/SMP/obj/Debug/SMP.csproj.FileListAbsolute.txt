@@ -81,10 +81,11 @@ C:\Users\M0986\source\repos\SMP\SMP\obj\Debug\SMP.csproj.CoreCompileInputs.cache
 C:\Users\M0986\source\repos\SMP\SMP\obj\Debug\SMP.csproj.CopyComplete
 C:\Users\M0986\source\repos\SMP\SMP\obj\Debug\SMP.dll
 C:\Users\M0986\source\repos\SMP\SMP\obj\Debug\SMP.pdb
+C:\workspace\SMP\SMP\SMP\bin\roslyn\csc.exe
+C:\workspace\SMP\SMP\SMP\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\workspace\SMP\SMP\SMP\bin\SMP.dll.config
 C:\workspace\SMP\SMP\SMP\bin\SMP.dll
 C:\workspace\SMP\SMP\SMP\bin\SMP.pdb
-C:\workspace\SMP\SMP\SMP\bin\roslyn\csc.exe
 C:\workspace\SMP\SMP\SMP\bin\roslyn\csc.exe.config
 C:\workspace\SMP\SMP\SMP\bin\roslyn\csc.rsp
 C:\workspace\SMP\SMP\SMP\bin\roslyn\csi.exe
@@ -93,7 +94,6 @@ C:\workspace\SMP\SMP\SMP\bin\roslyn\csi.rsp
 C:\workspace\SMP\SMP\SMP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\workspace\SMP\SMP\SMP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\workspace\SMP\SMP\SMP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\workspace\SMP\SMP\SMP\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\workspace\SMP\SMP\SMP\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
 C:\workspace\SMP\SMP\SMP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\workspace\SMP\SMP\SMP\bin\roslyn\Microsoft.CSharp.Core.targets
@@ -131,6 +131,8 @@ C:\workspace\SMP\SMP\SMP\bin\roslyn\vbc.rsp
 C:\workspace\SMP\SMP\SMP\bin\roslyn\VBCSCompiler.exe
 C:\workspace\SMP\SMP\SMP\bin\roslyn\VBCSCompiler.exe.config
 C:\workspace\SMP\SMP\SMP\bin\Antlr3.Runtime.dll
+C:\workspace\SMP\SMP\SMP\bin\EntityFramework.dll
+C:\workspace\SMP\SMP\SMP\bin\EntityFramework.SqlServer.dll
 C:\workspace\SMP\SMP\SMP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\workspace\SMP\SMP\SMP\bin\Microsoft.Web.Infrastructure.dll
 C:\workspace\SMP\SMP\SMP\bin\Newtonsoft.Json.dll
@@ -142,6 +144,8 @@ C:\workspace\SMP\SMP\SMP\bin\System.Web.WebPages.Deployment.dll
 C:\workspace\SMP\SMP\SMP\bin\System.Web.WebPages.dll
 C:\workspace\SMP\SMP\SMP\bin\System.Web.WebPages.Razor.dll
 C:\workspace\SMP\SMP\SMP\bin\WebGrease.dll
+C:\workspace\SMP\SMP\SMP\bin\EntityFramework.xml
+C:\workspace\SMP\SMP\SMP\bin\EntityFramework.SqlServer.xml
 C:\workspace\SMP\SMP\SMP\bin\System.Web.Helpers.xml
 C:\workspace\SMP\SMP\SMP\bin\System.Web.Mvc.xml
 C:\workspace\SMP\SMP\SMP\bin\System.Web.Optimization.xml
@@ -159,12 +163,8 @@ C:\workspace\SMP\SMP\SMP\bin\pt-br\System.Web.Razor.resources.dll
 C:\workspace\SMP\SMP\SMP\bin\pt-br\System.Web.WebPages.resources.dll
 C:\workspace\SMP\SMP\SMP\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
 C:\workspace\SMP\SMP\SMP\bin\pt-br\System.Web.WebPages.Razor.resources.dll
-C:\workspace\SMP\SMP\SMP\obj\Debug\SMP.csprojAssemblyReference.cache
 C:\workspace\SMP\SMP\SMP\obj\Debug\SMP.csproj.CoreCompileInputs.cache
 C:\workspace\SMP\SMP\SMP\obj\Debug\SMP.csproj.CopyComplete
 C:\workspace\SMP\SMP\SMP\obj\Debug\SMP.dll
 C:\workspace\SMP\SMP\SMP\obj\Debug\SMP.pdb
-C:\workspace\SMP\SMP\SMP\bin\EntityFramework.dll
-C:\workspace\SMP\SMP\SMP\bin\EntityFramework.SqlServer.dll
-C:\workspace\SMP\SMP\SMP\bin\EntityFramework.xml
-C:\workspace\SMP\SMP\SMP\bin\EntityFramework.SqlServer.xml
+C:\workspace\SMP\SMP\SMP\obj\Debug\SMP.csprojAssemblyReference.cache

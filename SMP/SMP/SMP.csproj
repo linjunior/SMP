@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AlunoController.cs" />
+    <Compile Include="Controllers\AlunoRepository.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProfessorController.cs" />
     <Compile Include="DAL\SMPContext.cs" />
@@ -136,10 +137,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Aluno.cs" />
     <Compile Include="Models\Log.cs" />
     <Compile Include="Models\Medida.cs" />
     <Compile Include="Models\Meta.cs" />
     <Compile Include="Models\Notificacao.cs" />
+    <Compile Include="Models\Professor.cs" />
     <Compile Include="Models\TipoUsuario.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -182,7 +185,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
-    <Content Include="Views\Home\CadastrarAluno.cshtml" />
+    <Content Include="Views\Aluno\CadastrarAluno.cshtml" />
     <Content Include="Views\Aluno\PainelAluno.cshtml" />
     <Content Include="Views\Aluno\Grafico.cshtml" />
     <Content Include="Views\Aluno\Notificacoes.cshtml" />
@@ -192,6 +195,7 @@
     <Content Include="Views\Admin\Lista.cshtml" />
     <Content Include="Views\Admin\Log.cshtml" />
     <Content Include="Views\Professor\Listar.cshtml" />
+    <Content Include="Views\Shared\_Layout2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

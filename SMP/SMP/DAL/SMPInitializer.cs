@@ -11,6 +11,7 @@ namespace SMP.DAL
     {
         protected override void Seed(SMPContext context)
         {
+            /* Iniciador de banco de dados
             var tipoUsuarios = new List<TipoUsuario>
             {
             new TipoUsuario{id_tipoUsuario=1,no_tipoUsuario="Admin"},
@@ -20,13 +21,14 @@ namespace SMP.DAL
 
             tipoUsuarios.ForEach(s => context.tipoUsuarios.Add(s));
             context.SaveChanges();
-
+            
             var usuarios = new List<Usuario>
             {
-            new Usuario{id_usuario=1,no_usuario="Admin",email="Admin@admin.com",senha="admin",CREF="", id_tipoUsuario=1}
+             new Usuario{id_usuario=1,no_usuario="Admin",email="Admin@admin.com",senha="admin",CREF="", id_tipoUsuario=1}
             };
             usuarios.ForEach(s => context.usuarios.Add(s));
             context.SaveChanges();
+            */
            
         }
 

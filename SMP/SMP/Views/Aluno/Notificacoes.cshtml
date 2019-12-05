@@ -1,11 +1,14 @@
-﻿@{
+﻿@model IEnumerable<SMP.Models.Notificacao>
+
+
+@{
     ViewBag.Title = "Notificações";
 }
 
 
 <html>
 <head>
-   
+
 </head>
 <body>
     <br />
@@ -14,136 +17,33 @@
 
         <input id="btnCadastrar" onclick="location.href='/Aluno/PainelAluno';" type="button" value="Voltar" />
 
+
         <table class="table">
-            <thead>
+            <tr>
+                <th>Notificador</th>
+                <th>Título</th>
+                <th>Mensagem</th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model)
+            {
                 <tr>
-
-
-
-                    <th scope="col">
-
-                        Notificador
-
-                    </th>
-
-                    <th scope="col">
-
-                        Título
-
-                    </th>
-
-                    <th scope="col">
-
-                        Mensagem
-
-                    </th>
-
-
+                    <td>@Html.DisplayFor(modelItem => item.usuarioNotificador)</td>
+                    <td>@Html.DisplayFor(modelItem => item.txt_titulo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.txt_mensagem)</td>
 
                 </tr>
-            </thead>
-            <tbody>
-                <tr>
-
-                    <td>
-
-                        <span  style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Pr. Renato</span>
-
-                    </td>
-
-                    <td>
-
-                        <span  style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Bem Vindo</span>
-
-                    </td>
-
-                    <td>
-
-                        <span  style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Nosso sistema vai te ajudar a atinir seus objetivos</span>
-
-                    </td>
-
-
-
-                </tr>
-                <tr>
-
-                    <td>
-
-                        <span  style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Pr. Renato</span>
-
-                    </td>
-
-                    <td>
-
-                        <span  style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Nova Evolução</span>
-
-                    </td>
-
-                    <td>
-
-                        <span  style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Parabéns mantenha o foco!</span>
-
-                    </td>
-
-
-
-                </tr>
-                <tr>
-
-                    <td>
-
-                        <span  style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Pr. Renato</span>
-
-                    </td>
-
-                    <td>
-
-                        <span  style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Alerta</span>
-
-                    </td>
-
-                    <td>
-
-                        <span  style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Você precisa melhorar seu condicionamento</span>
-
-                    </td>
-
-
-
-                </tr>
-
-                <tr>
-
-                    <td>
-
-                        <span  style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Pr. Renato</span>
-
-                    </td>
-
-                    <td>
-
-                        <span  style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Maravilha!</span>
-
-                    </td>
-
-                    <td>
-
-                        <span  style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Paranbéns você conseguiu</span>
-
-                    </td>
-
-
-
-                </tr>
-
-            </tbody>
-
+            }
         </table>
 
 
     </div>
-  
+
 
 </body>
 </html>
+
+
+
+
+

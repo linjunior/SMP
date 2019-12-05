@@ -1,68 +1,72 @@
-﻿@{
-    ViewBag.Title = "Bem vindo! Pr. Ricardo";
+﻿@model  IEnumerable<SMP.Models.Aluno>
+@{
+    ViewBag.Title = "Bem vindo!";
 }
-
-<div class="jumbotron" style="background-image:url('../fita.jpg'); width: 100%; height: 100%; background-size:cover;">
-    <h2 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">@ViewBag.Title</h2>
-    <br />
-    <form action="/" method="post">
-        <div>
-            <p><span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Quantidade de alunos: 10</span></p>
-            <p><span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Último Login: 10/11/2019</span></p>
-        </div>
-
-        <div>
-            <p>
-                <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Ver evolução do Aluno: </span>
-                <select id="alunos">
-                    <option>Henrique Lima</option>
-                    <option>Fabrício Costa</option>
-                    <option>Fabiana Lima</option>
-                    <option>Elenice Vieira de Souza</option>
-                    <option>Cinair Correia</option>
-                    <option>Denis</option>
-                    <option>Fábio</option>
-                    <option>Fernando</option>
-                    <option>Odair Vieira</option>
-                </select>
-
-                <br />
-                <input id="btnAcompanhar" type="button" onclick="location.href='/Aluno/Grafico';" value="Acompanhar" />
-            </p>
-                <br />
-        </div>
-
-        <div>
-            <br /><br />
-            <p>
-                <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Notificar Aluno: </span>
-                <select id="alunos">
-                    <option>Henrique Lima</option>
-                    <option>Fabrício Costa</option>
-                    <option>Fabiana Lima</option>
-                    <option>Elenice Vieira de Souza</option>
-                    <option>Cinair Correia</option>
-                    <option>Denis</option>
-                    <option>Fábio</option>
-                    <option>Fernando</option>
-                    <option>Odair Vieira</option>
-                </select>
+@using (Html.BeginForm("PainelProfessor", "Professor", FormMethod.Post))
+{
+    <div class="jumbotron" style="background-image:url('../fita.jpg'); width: 100%; height: 100%; background-size:cover;">
+        <h2 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">@ViewBag.Title</h2>
 
 
-
-            <p><span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Título: </span><input id="txtTitulo" type="text" /></p>
-            <p><span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Mensagem: </span></p>
-            <p><textarea id="txtMensagem" name="mensagem" rows="5" cols="33"> </textarea></p>
-            <input id="btnNotificar" type="button" onclick="alert('Notificação enviada com sucesso!')" value="Notficar" />
-            </p>
+        <div class="form-group">
             <br />
+            <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">
+                Notificar Aluno:
+            </span>
+            <br />
+            <div class="col-md-10">
+                <select id="notificado" name="notificado" class="form-control">
+                    @foreach (var item in Model)
+                    {
+                        <option id="@Html.DisplayFor(@modelItem => item.id_usuario)"> @Html.DisplayFor(@modelItem => item.no_usuario) </option>
+                    }
+                </select>
+
+            </div>
+
+            <div class="col-md-10">
+                <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">
+                    Título:
+                </span>
+                <input type="text" class="form-control" id="txt_titulo" name="txt_titulo" />
+            </div>
+
+
+            <div class="col-md-10">
+                <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">
+                    Mensagem:
+                </span>
+                <input type="text" class="form-control" id="txt_mensagem" name="txt_mensagem" />
+            </div>
+
+            <div class="col-md-10">
+                <br />
+                <input type="submit" value="Enviar" class="btn btn-default" />
+            </div>
+
+
         </div>
 
 
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10" style="background-color:white">
+                <span style="color: Blue; text-shadow: white 0.1em 0.1em 0.2em">
+                    @ViewBag.Message
+                </span>
+            </div>
+        </div>
+
+        <br /><br /><br />
         <div>
             <br /><br />
-            <input id="btnLista" onclick="location.href='/Professor/Listar';" type="button" value="Listar Alunos" />
-            <input id="btnEditar" onclick="location.href='/Admin/CadastrarProfessor';" type="button" value="Editar Cadastro" />
+            <span>!</span>
         </div>
-    </form>
-</div>
+    </div>
+    <div>
+        <br /><br />
+        <input id="btnLista" class="btn btn-default" onclick="location.href='/Professor/Listar';" type="button" value="Listar Alunos" />
+
+    </div>
+}

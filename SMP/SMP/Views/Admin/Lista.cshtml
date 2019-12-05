@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<SMP.Models.Professor>
+@{
     ViewBag.Title = "Lista de Professores";
 }
 
@@ -15,108 +16,21 @@
         <input id="btnCadastrar" onclick="location.href='/Admin/PainelAdmin';" type="button" value="Voltar" />
 
         <table class="table">
-            <thead>
+            <tr>
+                <th>Nome do Professor</th>
+                <th>CREF</th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model)
+            {
                 <tr>
-
-
-
-                    <th scope="col">
-
-                        Nome Professor
-
-                    </th>
-
-                    <th scope="col">
-
-                        CREF
-
-                    </th>
-
-                    
-
+                    <td>@Html.DisplayFor(modelItem => item.no_usuario)</td>
+                    <td>@Html.DisplayFor(modelItem => item.CREF)</td>
 
 
                 </tr>
-            </thead>
-            <tbody>
-                <tr>
-
-                    <td>
-
-                        <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Pr. Ricardo</span>
-
-                    </td>
-
-                    <td>
-
-                        <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> 99999-990</span>
-
-                    </td>
-
-                   
-
-
-
-                </tr>
-                <tr>
-
-                    <td>
-
-                        <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Pr. Renato</span>
-
-                    </td>
-
-                    <td>
-
-                        <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> 99999-990</span>
-
-                    </td>
-
-
-
-
-                </tr>
-                <tr>
-
-                    <td>
-
-                        <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Pr. Rogério</span>
-
-                    </td>
-
-                    <td>
-
-                        <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> 99999-990</span>
-
-                    </td>
-
-
-
-                </tr>
-
-                <tr>
-
-                    <td>
-
-                        <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> Pr. Sandro</span>
-
-                    </td>
-
-                    <td>
-
-                        <span style="color: white; text-shadow: black 0.1em 0.1em 0.2em"> 99999-990</span>
-
-                    </td>
-
-
-
-
-                </tr>
-
-            </tbody>
-
+            }
         </table>
-
 
     </div>
 
