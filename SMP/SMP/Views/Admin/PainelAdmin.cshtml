@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Bem vindo! Pr. Admin";
+}
+
+<div class="jumbotron" style="background-image:url('../fita.jpg'); width: 100%; height: 100%; background-size:cover;">
+    <h2 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">@ViewBag.Title</h2>
+    <br />
+    <form action="/" method="post">
+        <div>
+            <br /><br />
+            <input id="btnLista" onclick="location.href='/Admin/Log';" type="button" value="Logs do Sistema" />
+            <input id="btnLista" onclick="location.href='/Admin/Lista';" type="button" value="Lista de Professores" />
+            <input id="btnEditar" onclick="location.href='/Admin/CadastrarProfessor';" type="button" value="Cadastrar Professor" />
+        </div>
+    </form>
+</div>

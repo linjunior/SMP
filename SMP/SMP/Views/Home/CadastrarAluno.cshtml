@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Informação do Aluno";
+}
+
+
+<div class="jumbotron" style="background-image:url('../fita.jpg'); width: 100%; height: 100%; background-size:cover;">
+    <h2 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">@ViewBag.Title</h2>
+    <br />
+    <form action="/" method="post">
+        <div>
+            <p><span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Nome: </span><input id="nome" type="text" /></p>
+            <p><span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Email: </span><input id="email" type="text" /></p>
+            <p><span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Senha: </span><input id="senha" type="password" /></p>
+            <p><span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Peso Atual: </span><input id="peso" type="text" /></p>
+            <p><span style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Peso Alvo: </span><input id="peso" type="text" /></p>
+        </div>
+        <br />
+        <div>
+            <input id="btnCadastrar" onclick="alert('Operação realizada com sucesso!')" type="button" value="Cadastrar" />
+            <input id="btnExcluir" type="button" onclick="alert('Usuário excluído com sucesso')" value="Excluir" />
+        </div>
+    </form>
+</div>
+
